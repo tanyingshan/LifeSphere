@@ -3,7 +3,7 @@ import pickle
 import os
 from jinja2 import TemplateNotFound
 
-app = Flask(__name__, static_folder='static')
+app = Flask(__name__, static_folder='static', debug=True)
 
 
 def load_model(model_path):
